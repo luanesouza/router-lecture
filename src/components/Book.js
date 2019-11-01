@@ -7,7 +7,6 @@ const Book = (props) => {
             <h1>Book</h1>
             <p>{props.book.title}</p>
             <p>{props.book.author}</p>
-
         </main>
 
     )
