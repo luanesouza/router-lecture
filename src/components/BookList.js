@@ -8,9 +8,9 @@ class BookList extends Component {
       ))
     
     return (
-        <section>
-            <h1> Book List </h1>
-            <p>Books {books}</p>
+        <section class='library'>
+            <h1> Library </h1>
+             {books}
         </section>
 
         )

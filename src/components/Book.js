@@ -1,13 +1,13 @@
 import React from 'react';
+import AboutTheAuthor from './AboutTheAuthor';
 
 const Book = (props) => {
-    console.log(props)
     return (
-        <main>
-            <h1>Book</h1>
-            <p>{props.book.title}</p>
-            <p>{props.book.author}</p>
-        </main>
+        <section class='bookInfo'>
+            <p id='title'>{props.book.title}</p>
+            <p id='author'>Written by {props.book.author}</p>
+            {/* <AboutTheAuthor author={props.book.author} about={props.book.aboutTheAuthor} image={props.book.img}/> */}
+        </section>
 
     )
 }
