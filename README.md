@@ -12,6 +12,8 @@
 - How can I put a wildcard replacement in a url in react?
 _key questions by Graham @telegraham_
 
+_form styling by https://www.w3schools.com/howto/howto_css_login_form.asp _
+
 
 
 

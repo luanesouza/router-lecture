@@ -3,6 +3,7 @@ import {Component} from 'react';
 import BookList from './components/BookList';
 import LogInForm from './components/LogInForm';
 import SignupForm from './components/SignupForm';
+import FourOhFour from './components/FourOhFour';
 import {
   Switch,
   Route,
@@ -29,6 +30,7 @@ class App extends Component {
         <LogInForm />
         <SignupForm />
         <BookList books={this.state.books} />
+        <FourOhFour />
         
       </div>
     )
