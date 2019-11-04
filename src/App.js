@@ -26,9 +26,9 @@ class App extends Component {
     console.log(this.props)
     return (
       <div className="App">
-        <Route path={'/'} component={ LogInForm }/>
-        <Route path={'/library'} component={() => <BookList books={this.state.books} />}/>
-        <Route path={'/signup'} component={SignupForm} />
+        <LogInForm />
+        <SignupForm />
+        <BookList books={this.state.books} />
         
       </div>
     )

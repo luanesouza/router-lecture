@@ -12,6 +12,7 @@ class LogInForm extends Component {
   }
 
   handleSubmit = (e) => {
+    e.preventDefault();
       console.log('called');
   }
 
@@ -33,7 +34,7 @@ class LogInForm extends Component {
             <input onChange={this.handleChange} value={this.state.username} type="text" name="username" required/>
 
             <label><b>Password</b></label>
-            <input onChange={this.handleChange} value={this.state.password} type="text" name="password" required/>
+            <input onChange={this.handleChange} value={this.state.password} type="password" name="password" autoComplete={'off'} required/>
 
             <button type="submit">SignUp</button>
             <label>
