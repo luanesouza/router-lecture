@@ -1,6 +1,13 @@
 import React from 'react';
 import {Component} from 'react';
-import BookList from './components/BookList'
+import BookList from './components/BookList';
+import LogInForm from './components/LogInForm';
+import SignupForm from './components/SignupForm';
+import {
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 class App extends Component {
@@ -14,10 +21,15 @@ class App extends Component {
     ],
     book: '',
   }
+
   render() {
+    console.log(this.props)
     return (
       <div className="App">
-        <BookList books={this.state.books} />
+        <Route path={'/'} component={ LogInForm }/>
+        <Route path={'/library'} component={() => <BookList books={this.state.books} />}/>
+        <Route path={'/signup'} component={SignupForm} />
+        
       </div>
     )
   }

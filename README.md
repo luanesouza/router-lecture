@@ -1,7 +1,5 @@
 # KEY QUESTIONS
-- What is client-side routing and how can it help me make a SPA?
-- What is different about this kind of routing from the way Rails does it?
-  - Is this just a React thing or could I do this with vanilla JS?
+
 - What is browser router, where should I put it, and why do I need it?
 - What is the Route component and what can it do for me?
   - What goes in the “path” prop?
@@ -13,9 +11,6 @@
 - How can I DRY this up based on data that might change?
 - How can I put a wildcard replacement in a url in react?
 _key questions by Graham @telegraham_
-
-
-
 
 
 
