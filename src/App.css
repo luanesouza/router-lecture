@@ -12,16 +12,39 @@ body {
 
 .bookInfo {
   padding: 1em;
+  text-align:center;
+
+}
+.book-cover-container {
+}
+
+#book-cover {
+  width: 8em;
 }
 
 #title {
   font-size: 1.5em;
   font-weight: bold;
   font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-right: 1em;
+}
+#author-name {
+  color: grey;
+  font-family: 'Noto Serif', serif;
 }
 
 #author {
   color: grey;
   font-family: 'Noto Serif', serif;
+  text-align: justify;
 
+}
+
+#author-image {
+  width: 10em;
+}
+
+.image-container {
+  text-align: center;
 }
