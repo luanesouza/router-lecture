@@ -1,11 +1,23 @@
-# Implementing React Router Part 1#
+# Objectives of this lecture #
+
+Understand how react-router works at a high level
+Be able to implement react-router
+Identify react-router weird behaviors and know how to prevent them from happening
+Use the keyword exact
+Use <Switch> to change between routes
+Use <Route> to render a specific component using ‘component’ or ‘render’ prop to pass custom props
+Use <Link> to replace <a> tags
+*BONUS* Use ‘withRouter’ HOC to add in router props to any component
+_by Kevin McLean_
+
+## Implementing React Router Part 1 ##
 * Step 1 - Install the npm package by running npm i —save  react-router-dom 
 * Step 2 - In index.js import BrowserRouter
 * Step 3 - import Route from react-router-dom in your parent component (it will usually be App.js)
 * Step 4 - Add <Route path={‘<name-of-the-path>‘} component={ <name-of-component />} to the return statement of App
 
 
-# Improving user experience #
+## Improving user experience ##
 Would you want to be on a website that you had to manually type the routes on the url?
 The answer to that question is 'no'.
 Let's see what props React Router gives us.
