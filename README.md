@@ -36,7 +36,11 @@ Let's see what props React Router gives us.
   - What goes in the “path” prop?
   - What does the “exact” prop do?
     - How is it different than the “strict” prop?
+    -> https://stackoverflow.com/questions/52275146/usage-of-exact-and-strict-props
 - What is the NavLink component and how can I use it?
+    `<NavLink exact activeClassName="active" to="/path1">`
+    `<NavLink exact activeClassName="active" to="/path2">`
+ -> https://www.codementor.io/packt/using-the-link-and-navlink-components-to-navigate-to-a-route-rieqipp42
   - What does the “activeClassName” prop do?
 - What is the switch component? How is it useful?
 _key questions by Graham @telegraham_
