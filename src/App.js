@@ -7,6 +7,7 @@ import FourOhFour from './components/FourOhFour';
 import {
   Switch,
   Route,
+  Redirect,
   Link
 } from "react-router-dom";
 import './App.css';
@@ -33,7 +34,8 @@ class App extends Component {
           <Route exact path={'/'} component={LogInForm} />
           <Route path={'/signup'} component={SignupForm} /> 
           <Route path={'/library'} render={(props) => <BookList {...props} books={this.state.books} />} />
-          <Route component={FourOhFour} />
+          <Redirect from='*' to='/' />
+          {/* <Route component={FourOhFour} /> */}
           {/* <LogInForm /> */}
           {/* <SignupForm /> */}
           
