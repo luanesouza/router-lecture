@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 
+const BookWrapper = () => <BookList books={this.state.books} />
+
 class App extends Component {
   state = {
     books: [
@@ -27,11 +29,16 @@ class App extends Component {
     console.log(this.props)
     return (
       <div className="App">
-        <LogInForm />
-        <SignupForm />
-        <BookList books={this.state.books} />
-        <FourOhFour />
-        
+        <Switch>
+          <Route exact path={'/'} component={LogInForm} />
+          <Route path={'/signup'} component={SignupForm} /> 
+          <Route path={'/library'} render={(props) => <BookList {...props} books={this.state.books} />} />
+          <Route component={FourOhFour} />
+          {/* <LogInForm /> */}
+          {/* <SignupForm /> */}
+          
+          {/* <FourOhFour /> */}
+        </Switch>
       </div>
     )
   }

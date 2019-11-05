@@ -12,10 +12,10 @@ class LogInForm extends Component {
 
   handleSubmit = (e) => {
       console.log('called');
+      this.props.history.push('/library')
   }
 
   render() {
-      console.log(this.props)
     return (
       <div className='form'>
         <form onSubmit={this.handleSubmit}>
