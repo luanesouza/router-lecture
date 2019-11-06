@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <NavLink
           to="/login"
-          activeClassName="selectedLink"
+          activeClassName="thiscouldbenamedwhateveryourwant"
           activeStyle={{
           background:'red',
           color:'white'
@@ -41,7 +41,7 @@ class App extends Component {
         </NavLink>
         <NavLink
           to="/signup"
-          activeClassName="selectedLink"
+          activeClassName="thiscouldbenamedwhateveryourwant"
           activeStyle={{
           background:'red',
           color:'white'
