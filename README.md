@@ -12,6 +12,7 @@ User <Redirect> to prevent our users from getting lost (aka hitting 404)
 *BONUS* Use ‘withRouter’ HOC to add in router props to any component
 _by Kevin McLean_
 
+
 ## Implementing React Router Part 1 ##
 * Step 1 - Install the npm package by running npm i —save  react-router-dom 
 * Step 2 - In index.js import BrowserRouter
@@ -29,6 +30,17 @@ Let's see what props React Router gives us.
 
 ********* _5 mins break_ ********
 
+### 10 minutes Practice Time ###
+
+## Additional Information ##
+Let's build a NavBar
+* NavLink ->
+to="<path_name>"
+activeStyle={{
+background:'red',
+color:'white'
+}
+* Higher Order Components
 
 
 # KEY QUESTIONS
