@@ -7,6 +7,7 @@ Use the keyword exact
 Use <Switch> to change between routes
 Use <Route> to render a specific component using ‘component’ or ‘render’ prop to pass custom props
 Use <Link> to replace <a> tags
+User <Redirect> to prevent our users from getting lost (aka hitting 404)
 *BONUS* Use ‘withRouter’ HOC to add in router props to any component
 _by Kevin McLean_
 
@@ -46,13 +47,3 @@ Let's see what props React Router gives us.
 _key questions by Graham @telegraham_
 
 _form styling by https://www.w3schools.com/howto/howto_css_login_form.asp _
-
-
-
-
-
-
-
-
-
-
