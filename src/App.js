@@ -31,14 +31,15 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path={'/'} component={LogInForm} />
-          <Route path={'/signup'} component={SignupForm} /> 
+          <Route exact path={'/'} component={HomePage} />
+          <Route exact path={'/login'} component={LogInForm} />
+          <Route path={'/signup'} component={SignupForm} />
           <Route path={'/library'} render={(props) => <BookList {...props} books={this.state.books} />} />
           <Redirect from='*' to='/' />
           {/* <Route component={FourOhFour} /> */}
           {/* <LogInForm /> */}
           {/* <SignupForm /> */}
-          
+
           {/* <FourOhFour /> */}
         </Switch>
       </div>
