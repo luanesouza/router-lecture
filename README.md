@@ -3,7 +3,7 @@
 Understand how react-router works at a high level
 Be able to implement react-router
 Identify react-router weird behaviors and know how to prevent them from happening
-Use the keyword exact
+Use the keyword exact vs strict
 Use <Switch> to change between routes
 Use <Route> to render a specific component using ‘component’ or ‘render’ prop to pass custom props
 Use <Link> to replace <a> tags
@@ -27,7 +27,17 @@ Let's see what props React Router gives us.
 
 ********* _5 mins break_ ********
 
+### 10 minutes Practice Time ###
 
+## Additional Information ##
+Let's build a NavBar
+* NavLink ->
+to="<path_name>"
+activeStyle={{
+background:'red',
+color:'white'
+}
+* Higher Order Components
 
 # KEY QUESTIONS
 
@@ -42,13 +52,3 @@ Let's see what props React Router gives us.
 _key questions by Graham @telegraham_
 
 _form styling by https://www.w3schools.com/howto/howto_css_login_form.asp _
-
-
-
-
-
-
-
-
-
-

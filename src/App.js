@@ -4,11 +4,13 @@ import BookList from './components/BookList';
 import LogInForm from './components/LogInForm';
 import SignupForm from './components/SignupForm';
 import FourOhFour from './components/FourOhFour';
+
 import {
   Switch,
   Route,
   Redirect,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 import './App.css';
 
@@ -22,16 +24,31 @@ class App extends Component {
       {title: 'The New Jim Crow: Mass Incarceration in the Age of Colorblindness', author: 'Michelle Alexander', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/51hVN9LrJhL.jpg', aboutTheAuthor: '', img: ''},
       {title: 'Inequality: What Can Be Done?', author: 'Anthony B. Atkinson', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/41JrF-s%2Ba0L._SX329_BO1,204,203,200_.jpg', aboutTheAuthor: '', img: ''},
       {title: 'Racism without Racists: Color-Blind Racism and the Persistence of Racial Inequality in the United States', author: 'Eduardo Bonilla-Silva', bookCover: 'https://images-na.ssl-images-amazon.com/images/I/413Uaj9n41L._SX312_BO1,204,203,200_.jpg', aboutTheAuthor: '', img: ''}
-    ],
-    book: '',
+    ]
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="App">
+        <NavLink
+          to="/login"
+          activeClassName="selectedLink"
+          activeStyle={{
+          background:'red',
+          color:'white'
+          }}>
+          Login
+        </NavLink>
+        <NavLink
+          to="/signup"
+          activeClassName="selectedLink"
+          activeStyle={{
+          background:'red',
+          color:'white'
+          }}>
+          Signup
+        </NavLink>
         <Switch>
-          <Route exact path={'/'} component={HomePage} />
           <Route exact path={'/login'} component={LogInForm} />
           <Route path={'/signup'} component={SignupForm} />
           <Route path={'/library'} render={(props) => <BookList {...props} books={this.state.books} />} />
