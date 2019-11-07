@@ -6,7 +6,6 @@ Identify react-router weird behaviors and know how to prevent them from happenin
 Use the keyword exact
 Use <Switch> to change between routes
 Use <Route> to render a specific component using ‘component’ or ‘render’ prop to pass custom props
-Use <Link> to replace <a> tags
 User <Redirect> to prevent our users from getting lost (aka hitting 404)
 `<Redirect from='*' to='/' />`
 *BONUS* Use ‘withRouter’ HOC to add in router props to any component
