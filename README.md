@@ -54,6 +54,7 @@ color:'white'
 - What is the NavLink component and how can I use it?
 
     `<NavLink exact activeClassName="active" to="/path1">`
+    
     `<NavLink exact activeClassName="active" to="/path2">`
     
  -> https://www.codementor.io/packt/using-the-link-and-navlink-components-to-navigate-to-a-route-rieqipp42
